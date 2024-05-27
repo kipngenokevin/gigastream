@@ -940,4 +940,8 @@
 		display: block;
 		
 	}
+
+	article.card-work {
+		margin: 1rem;
+	}
 }
