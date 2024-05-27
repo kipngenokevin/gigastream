@@ -198,7 +198,6 @@
   }
 
   
-  
   .card-services {
     margin: 1rem;
   }
@@ -260,6 +259,73 @@
     background-color: var(--color-primary);
     width: 100%;
   }
+
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+	position: relative;
+	top: -2rem;
+  }
+
+  .form-search {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+ }
+
+.search-icon {
+	fill: white;
+}
+
+.sidebar {
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	top: 0;
+	right: -250px;
+	background-color: var(--color-black);
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding: 3rem 3rem;
+}
+
+.sidebar-nav {
+	list-style-type: none;
+	padding: 0;
+}
+
+.sidebar-item {
+	padding: 8px 16px;
+	text-align: left;
+}
+
+.sidebar-link {
+	text-decoration: none;
+	color: white;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidebar-link:hover {
+	color: #f1f1f1;
+}
+
+.close {
+	display: none;
+	position: absolute;
+	top: 0px;
+	top: 1rem;
+	font-size: 2rem;
+}
   
   /* Header
       ============================= */
@@ -857,3 +923,21 @@
     cursor: text;
     margin: 0 1rem;
   }
+
+
+
+  @media screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+		float: right;
+    }
+
+	.close {
+		display: block;
+		
+	}
+}
