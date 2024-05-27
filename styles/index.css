@@ -182,11 +182,6 @@
   /* Layout
       ============================= */
   
-  .container {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-  }
   
   /* Grid
       ============================= */
@@ -202,11 +197,9 @@
 	flex-shrink: 1 !important;
   }
 
-  .row>* {
-	flex-shrink: 1 !important;
-  }
   
-  [class*='col-'] {
+  
+  .card-services {
     margin: 1rem;
   }
   
