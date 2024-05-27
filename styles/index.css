@@ -199,6 +199,11 @@
   
   .row {
     display: flex;
+	flex-shrink: 1 !important;
+  }
+
+  .row>* {
+	flex-shrink: 1 !important;
   }
   
   [class*='col-'] {
@@ -239,6 +244,7 @@
     display: block;
     padding: 0.5rem 0;
     position: relative;
+	color: var(--color-white);
   }
   
   .nav .nav-link:hover {
